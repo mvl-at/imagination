@@ -1,0 +1,36 @@
+@import "components/buttons";
+
+@mixin background-linear($opacity: 1) {
+  background-image: linear-gradient(to top right, rgba($primary, $opacity), 73%, rgba($secondary, $opacity));
+}
+
+.button-primary {
+  @include background-linear;
+  color: white;
+}
+
+.section {
+  background-color: white;
+  display: flex;
+  padding: 5rem;
+}
+
+.section-head {
+  //height: 200px;
+  padding: 0;
+  background-color: $button-primary-color;
+}
+
+.section:nth-child(2n+1) {
+  @include background-linear(0.66);
+  background-color: unset;
+  color: white;
+}
+
+.section:nth-child(2n+1) {
+  color: white;
+}
+
+body {
+  background: url("back.jpg") center/cover fixed;
+}

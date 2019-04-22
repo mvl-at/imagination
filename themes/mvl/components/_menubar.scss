@@ -1,0 +1,33 @@
+.navbar-item {
+  float: left;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar-link {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-link:hover {
+  color: $primary;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  transition: padding 0.3s, background-color 0.3s, box-shadow 0.3s;
+  z-index: 10;
+}
+
+.navbar-portable {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.25);
+}
